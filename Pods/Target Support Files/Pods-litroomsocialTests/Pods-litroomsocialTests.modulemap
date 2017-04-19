@@ -1,0 +1,6 @@
+framework module Pods_litroomsocialTests {
+  umbrella header "Pods-litroomsocialTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

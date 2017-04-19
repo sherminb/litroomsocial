@@ -14,6 +14,9 @@
 		2A9C93FF1EA7F8D200D38E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C93FE1EA7F8D200D38E14 /* Assets.xcassets */; };
 		2A9C94021EA7F8D200D38E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C94001EA7F8D200D38E14 /* LaunchScreen.storyboard */; };
 		2A9C940D1EA7F8D300D38E14 /* litroomsocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C940C1EA7F8D300D38E14 /* litroomsocialTests.swift */; };
+		2A9C94181EA7F98300D38E14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C94171EA7F98300D38E14 /* GoogleService-Info.plist */; };
+		95768E4C1E0757D4960091D5 /* Pods_litroomsocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */; };
+		F6ADD1F60D4FEF73B867FD89 /* Pods_litroomsocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C0477620F653C1762F9E5 /* Pods_litroomsocial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,13 @@
 		2A9C94081EA7F8D300D38E14 /* litroomsocialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = litroomsocialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9C940C1EA7F8D300D38E14 /* litroomsocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litroomsocialTests.swift; sourceTree = "<group>"; };
 		2A9C940E1EA7F8D300D38E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A9C94171EA7F98300D38E14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C9CB6E3DE1EF69371923CBD /* Pods-litroomsocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial.debug.xcconfig"; sourceTree = "<group>"; };
+		79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litroomsocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE94547A02BC915BF30501DA /* Pods-litroomsocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests.release.xcconfig"; sourceTree = "<group>"; };
+		B96C0477620F653C1762F9E5 /* Pods_litroomsocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litroomsocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C273DA70FD1F41AC6BEA4454 /* Pods-litroomsocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocialTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C41C4631CA7A274DC6A06751 /* Pods-litroomsocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocial.release.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6ADD1F60D4FEF73B867FD89 /* Pods_litroomsocial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +63,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95768E4C1E0757D4960091D5 /* Pods_litroomsocialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13EDFFCF14F5278385FA9DA3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C9CB6E3DE1EF69371923CBD /* Pods-litroomsocial.debug.xcconfig */,
+				C41C4631CA7A274DC6A06751 /* Pods-litroomsocial.release.xcconfig */,
+				C273DA70FD1F41AC6BEA4454 /* Pods-litroomsocialTests.debug.xcconfig */,
+				AE94547A02BC915BF30501DA /* Pods-litroomsocialTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2A9C93E81EA7F8D200D38E14 = {
 			isa = PBXGroup;
 			children = (
 				2A9C93F31EA7F8D200D38E14 /* litroomsocial */,
 				2A9C940B1EA7F8D300D38E14 /* litroomsocialTests */,
 				2A9C93F21EA7F8D200D38E14 /* Products */,
+				13EDFFCF14F5278385FA9DA3 /* Pods */,
+				AF795B0C3A7AE63AA5E26119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +110,7 @@
 				2A9C93FE1EA7F8D200D38E14 /* Assets.xcassets */,
 				2A9C94001EA7F8D200D38E14 /* LaunchScreen.storyboard */,
 				2A9C94031EA7F8D200D38E14 /* Info.plist */,
+				2A9C94171EA7F98300D38E14 /* GoogleService-Info.plist */,
 				2A9C93FB1EA7F8D200D38E14 /* litroomsocial.xcdatamodeld */,
 			);
 			path = litroomsocial;
@@ -99,6 +125,15 @@
 			path = litroomsocialTests;
 			sourceTree = "<group>";
 		};
+		AF795B0C3A7AE63AA5E26119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B96C0477620F653C1762F9E5 /* Pods_litroomsocial.framework */,
+				79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +141,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A9C94111EA7F8D300D38E14 /* Build configuration list for PBXNativeTarget "litroomsocial" */;
 			buildPhases = (
+				4601873AB7A305CDFAEEC880 /* [CP] Check Pods Manifest.lock */,
 				2A9C93ED1EA7F8D200D38E14 /* Sources */,
 				2A9C93EE1EA7F8D200D38E14 /* Frameworks */,
 				2A9C93EF1EA7F8D200D38E14 /* Resources */,
+				A3E31DC367361E089E0C2A95 /* [CP] Embed Pods Frameworks */,
+				CE206A233C04F9D8C57A47B1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2A9C94141EA7F8D300D38E14 /* Build configuration list for PBXNativeTarget "litroomsocialTests" */;
 			buildPhases = (
+				7357361E50F9CE0036A6FB82 /* [CP] Check Pods Manifest.lock */,
 				2A9C94041EA7F8D300D38E14 /* Sources */,
 				2A9C94051EA7F8D300D38E14 /* Frameworks */,
 				2A9C94061EA7F8D300D38E14 /* Resources */,
+				40A51B1604F5CAECE818C4E0 /* [CP] Embed Pods Frameworks */,
+				1E8815F5C71F0EEBE8E4EA00 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A9C94021EA7F8D200D38E14 /* LaunchScreen.storyboard in Resources */,
+				2A9C94181EA7F98300D38E14 /* GoogleService-Info.plist in Resources */,
 				2A9C93FF1EA7F8D200D38E14 /* Assets.xcassets in Resources */,
 				2A9C93FA1EA7F8D200D38E14 /* Main.storyboard in Resources */,
 			);
@@ -197,6 +239,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E8815F5C71F0EEBE8E4EA00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40A51B1604F5CAECE818C4E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4601873AB7A305CDFAEEC880 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7357361E50F9CE0036A6FB82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3E31DC367361E089E0C2A95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE206A233C04F9D8C57A47B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2A9C93ED1EA7F8D200D38E14 /* Sources */ = {
@@ -344,6 +479,7 @@
 		};
 		2A9C94121EA7F8D300D38E14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9CB6E3DE1EF69371923CBD /* Pods-litroomsocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Q6XD4YG28;
@@ -357,6 +493,7 @@
 		};
 		2A9C94131EA7F8D300D38E14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C41C4631CA7A274DC6A06751 /* Pods-litroomsocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9Q6XD4YG28;
@@ -370,6 +507,7 @@
 		};
 		2A9C94151EA7F8D300D38E14 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C273DA70FD1F41AC6BEA4454 /* Pods-litroomsocialTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -384,6 +522,7 @@
 		};
 		2A9C94161EA7F8D300D38E14 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE94547A02BC915BF30501DA /* Pods-litroomsocialTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
