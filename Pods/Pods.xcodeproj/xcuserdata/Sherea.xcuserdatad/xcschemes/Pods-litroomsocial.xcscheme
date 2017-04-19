@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2674625091D74D3D92C6B2A5684FABFA"
+               BlueprintIdentifier = "158EB4440DD7EF5F54EE8DD91DCB210F"
                BuildableName = "Pods_litroomsocial.framework"
                BlueprintName = "Pods-litroomsocial"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2674625091D74D3D92C6B2A5684FABFA"
+            BlueprintIdentifier = "158EB4440DD7EF5F54EE8DD91DCB210F"
             BuildableName = "Pods_litroomsocial.framework"
             BlueprintName = "Pods-litroomsocial"
             ReferencedContainer = "container:Pods.xcodeproj">
