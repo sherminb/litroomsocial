@@ -15,6 +15,11 @@
 		2A9C94021EA7F8D200D38E14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C94001EA7F8D200D38E14 /* LaunchScreen.storyboard */; };
 		2A9C940D1EA7F8D300D38E14 /* litroomsocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C940C1EA7F8D300D38E14 /* litroomsocialTests.swift */; };
 		2A9C94181EA7F98300D38E14 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C94171EA7F98300D38E14 /* GoogleService-Info.plist */; };
+		2A9C941C1EA8039D00D38E14 /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C941B1EA8039D00D38E14 /* FancyView.swift */; };
+		2A9C941E1EA803EC00D38E14 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C941D1EA803EC00D38E14 /* Constants.swift */; };
+		2A9C94201EA804E000D38E14 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C941F1EA804E000D38E14 /* FancyTextField.swift */; };
+		2A9C94221EA804FE00D38E14 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94211EA804FE00D38E14 /* FancyButton.swift */; };
+		2A9C94241EA8061600D38E14 /* RoundedFancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */; };
 		95768E4C1E0757D4960091D5 /* Pods_litroomsocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */; };
 		F6ADD1F60D4FEF73B867FD89 /* Pods_litroomsocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C0477620F653C1762F9E5 /* Pods_litroomsocial.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +47,11 @@
 		2A9C940C1EA7F8D300D38E14 /* litroomsocialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = litroomsocialTests.swift; sourceTree = "<group>"; };
 		2A9C940E1EA7F8D300D38E14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A9C94171EA7F98300D38E14 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A9C941B1EA8039D00D38E14 /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		2A9C941D1EA803EC00D38E14 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2A9C941F1EA804E000D38E14 /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
+		2A9C94211EA804FE00D38E14 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
+		2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedFancyButton.swift; sourceTree = "<group>"; };
 		3C9CB6E3DE1EF69371923CBD /* Pods-litroomsocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial.debug.xcconfig"; sourceTree = "<group>"; };
 		79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litroomsocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE94547A02BC915BF30501DA /* Pods-litroomsocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +114,8 @@
 		2A9C93F31EA7F8D200D38E14 /* litroomsocial */ = {
 			isa = PBXGroup;
 			children = (
+				2A9C941A1EA8038200D38E14 /* Utility */,
+				2A9C94191EA8037700D38E14 /* View */,
 				2A9C93F41EA7F8D200D38E14 /* AppDelegate.swift */,
 				2A9C93F61EA7F8D200D38E14 /* ViewController.swift */,
 				2A9C93F81EA7F8D200D38E14 /* Main.storyboard */,
@@ -123,6 +135,25 @@
 				2A9C940E1EA7F8D300D38E14 /* Info.plist */,
 			);
 			path = litroomsocialTests;
+			sourceTree = "<group>";
+		};
+		2A9C94191EA8037700D38E14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C941B1EA8039D00D38E14 /* FancyView.swift */,
+				2A9C941F1EA804E000D38E14 /* FancyTextField.swift */,
+				2A9C94211EA804FE00D38E14 /* FancyButton.swift */,
+				2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2A9C941A1EA8038200D38E14 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C941D1EA803EC00D38E14 /* Constants.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		AF795B0C3A7AE63AA5E26119 /* Frameworks */ = {
@@ -338,8 +369,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9C941E1EA803EC00D38E14 /* Constants.swift in Sources */,
+				2A9C94241EA8061600D38E14 /* RoundedFancyButton.swift in Sources */,
 				2A9C93F71EA7F8D200D38E14 /* ViewController.swift in Sources */,
 				2A9C93FD1EA7F8D200D38E14 /* litroomsocial.xcdatamodeld in Sources */,
+				2A9C94221EA804FE00D38E14 /* FancyButton.swift in Sources */,
+				2A9C94201EA804E000D38E14 /* FancyTextField.swift in Sources */,
+				2A9C941C1EA8039D00D38E14 /* FancyView.swift in Sources */,
 				2A9C93F51EA7F8D200D38E14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +590,7 @@
 				2A9C94131EA7F8D300D38E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A9C94141EA7F8D300D38E14 /* Build configuration list for PBXNativeTarget "litroomsocialTests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +599,7 @@
 				2A9C94161EA7F8D300D38E14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
