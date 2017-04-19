@@ -27,6 +27,22 @@ class SignInController: UIViewController {
     }
 
     @IBAction func signInBtnPressed(_ sender: Any) {
+        if let email = emailTxt.text, let password = passwordTxt.text{
+            FIRAuth.auth()?.signIn(withEmail: email, password: password){(user,error) in
+                if error == nil{
+                    print("Litroom: firebase email login success")
+                }else{
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password){(user,error) in
+                        if error != nil{
+                            print("Litroom: error in creating user, err=\(error.debugDescription)")
+                        }else{
+                            print ("Litroom: creating new user success")
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 
     @IBAction func fbBtnPressed(_ sender: Any) {
