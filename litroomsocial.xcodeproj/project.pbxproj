@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A9C93F51EA7F8D200D38E14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C93F41EA7F8D200D38E14 /* AppDelegate.swift */; };
-		2A9C93F71EA7F8D200D38E14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C93F61EA7F8D200D38E14 /* ViewController.swift */; };
+		2A9C93F71EA7F8D200D38E14 /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C93F61EA7F8D200D38E14 /* SignInController.swift */; };
 		2A9C93FA1EA7F8D200D38E14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C93F81EA7F8D200D38E14 /* Main.storyboard */; };
 		2A9C93FD1EA7F8D200D38E14 /* litroomsocial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C93FB1EA7F8D200D38E14 /* litroomsocial.xcdatamodeld */; };
 		2A9C93FF1EA7F8D200D38E14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C93FE1EA7F8D200D38E14 /* Assets.xcassets */; };
@@ -37,7 +37,7 @@
 /* Begin PBXFileReference section */
 		2A9C93F11EA7F8D200D38E14 /* litroomsocial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = litroomsocial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9C93F41EA7F8D200D38E14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A9C93F61EA7F8D200D38E14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A9C93F61EA7F8D200D38E14 /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		2A9C93F91EA7F8D200D38E14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A9C93FC1EA7F8D200D38E14 /* litroomsocial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = litroomsocial.xcdatamodel; sourceTree = "<group>"; };
 		2A9C93FE1EA7F8D200D38E14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -114,10 +114,10 @@
 		2A9C93F31EA7F8D200D38E14 /* litroomsocial */ = {
 			isa = PBXGroup;
 			children = (
+				2A9C94251EA80F3700D38E14 /* Controller */,
 				2A9C941A1EA8038200D38E14 /* Utility */,
 				2A9C94191EA8037700D38E14 /* View */,
 				2A9C93F41EA7F8D200D38E14 /* AppDelegate.swift */,
-				2A9C93F61EA7F8D200D38E14 /* ViewController.swift */,
 				2A9C93F81EA7F8D200D38E14 /* Main.storyboard */,
 				2A9C93FE1EA7F8D200D38E14 /* Assets.xcassets */,
 				2A9C94001EA7F8D200D38E14 /* LaunchScreen.storyboard */,
@@ -154,6 +154,14 @@
 				2A9C941D1EA803EC00D38E14 /* Constants.swift */,
 			);
 			name = Utility;
+			sourceTree = "<group>";
+		};
+		2A9C94251EA80F3700D38E14 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C93F61EA7F8D200D38E14 /* SignInController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		AF795B0C3A7AE63AA5E26119 /* Frameworks */ = {
@@ -371,7 +379,7 @@
 			files = (
 				2A9C941E1EA803EC00D38E14 /* Constants.swift in Sources */,
 				2A9C94241EA8061600D38E14 /* RoundedFancyButton.swift in Sources */,
-				2A9C93F71EA7F8D200D38E14 /* ViewController.swift in Sources */,
+				2A9C93F71EA7F8D200D38E14 /* SignInController.swift in Sources */,
 				2A9C93FD1EA7F8D200D38E14 /* litroomsocial.xcdatamodeld in Sources */,
 				2A9C94221EA804FE00D38E14 /* FancyButton.swift in Sources */,
 				2A9C94201EA804E000D38E14 /* FancyTextField.swift in Sources */,
