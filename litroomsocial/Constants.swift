@@ -9,3 +9,4 @@
 import UIKit
 
 let SHADOW_COLOR : CGFloat = 120.0 / 255.0
+let USER_IS_LOGGED_IN : String = "uid"

@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FBSDKLoginKit
 import FBSDKCoreKit
+import SwiftKeychainWrapper
 
 class SignInController: UIViewController {
 
@@ -18,12 +19,18 @@ class SignInController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let retrievedString: String? = KeychainWrapper.standard.string(forKey: USER_IS_LOGGED_IN)
+        if retrievedString != nil{
+            print("Litroom: User is already logged in")
+            performSegue(withIdentifier: "GoToFeed", sender: nil)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+       
     }
 
     @IBAction func signInBtnPressed(_ sender: Any) {
@@ -31,12 +38,14 @@ class SignInController: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: password){(user,error) in
                 if error == nil{
                     print("Litroom: firebase email login success")
+                    self.signInDone(user: user)
                 }else{
                     FIRAuth.auth()?.createUser(withEmail: email, password: password){(user,error) in
                         if error != nil{
                             print("Litroom: error in creating user, err=\(error.debugDescription)")
                         }else{
                             print ("Litroom: creating new user success")
+                            self.signInDone(user: user)
                         }
                     }
                     
@@ -44,7 +53,15 @@ class SignInController: UIViewController {
             }
         }
     }
-
+    func signInDone(user: FIRUser?){
+        if let user = user{
+            let saveSuccessful: Bool = KeychainWrapper.standard.set(user.uid, forKey: USER_IS_LOGGED_IN)
+            if saveSuccessful{
+                print("Litroom: keychain update success")
+            }
+            performSegue(withIdentifier: "GoToFeed", sender: nil)
+        }
+    }
     @IBAction func fbBtnPressed(_ sender: Any) {
         let fbLoginManager = FBSDKLoginManager()
         
@@ -67,6 +84,7 @@ class SignInController: UIViewController {
                 
             }else{
                 print("Litroom: firbase login success")
+                self.signInDone(user: user)
             }
         }
     }

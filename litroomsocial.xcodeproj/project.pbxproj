@@ -20,6 +20,7 @@
 		2A9C94201EA804E000D38E14 /* FancyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C941F1EA804E000D38E14 /* FancyTextField.swift */; };
 		2A9C94221EA804FE00D38E14 /* FancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94211EA804FE00D38E14 /* FancyButton.swift */; };
 		2A9C94241EA8061600D38E14 /* RoundedFancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */; };
+		2A9C94271EA8403400D38E14 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94261EA8403400D38E14 /* FeedController.swift */; };
 		95768E4C1E0757D4960091D5 /* Pods_litroomsocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */; };
 		F6ADD1F60D4FEF73B867FD89 /* Pods_litroomsocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C0477620F653C1762F9E5 /* Pods_litroomsocial.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		2A9C941F1EA804E000D38E14 /* FancyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyTextField.swift; sourceTree = "<group>"; };
 		2A9C94211EA804FE00D38E14 /* FancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyButton.swift; sourceTree = "<group>"; };
 		2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedFancyButton.swift; sourceTree = "<group>"; };
+		2A9C94261EA8403400D38E14 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		3C9CB6E3DE1EF69371923CBD /* Pods-litroomsocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial.debug.xcconfig"; sourceTree = "<group>"; };
 		79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litroomsocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE94547A02BC915BF30501DA /* Pods-litroomsocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9C93F61EA7F8D200D38E14 /* SignInController.swift */,
+				2A9C94261EA8403400D38E14 /* FeedController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				2A9C94221EA804FE00D38E14 /* FancyButton.swift in Sources */,
 				2A9C94201EA804E000D38E14 /* FancyTextField.swift in Sources */,
 				2A9C941C1EA8039D00D38E14 /* FancyView.swift in Sources */,
+				2A9C94271EA8403400D38E14 /* FeedController.swift in Sources */,
 				2A9C93F51EA7F8D200D38E14 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
