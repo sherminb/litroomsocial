@@ -19,14 +19,16 @@ class SignInController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        
+    }
+    override func viewDidAppear(_ animated: Bool) {
         let retrievedString: String? = KeychainWrapper.standard.string(forKey: USER_IS_LOGGED_IN)
         if retrievedString != nil{
             print("Litroom: User is already logged in")
             performSegue(withIdentifier: "GoToFeed", sender: nil)
         }
-        
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
