@@ -135,11 +135,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign-out" translatesAutoresizingMaskIntoConstraints="NO" id="cyn-X6-EQe">
-                                        <rect key="frame" x="10" y="3.5" width="49" height="53"/>
+                                        <rect key="frame" x="10" y="11" width="45" height="38"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="53" id="Y8s-40-p8n"/>
-                                            <constraint firstAttribute="width" constant="49" id="tZw-Xt-QUX"/>
+                                            <constraint firstAttribute="height" constant="38" id="Y8s-40-p8n"/>
+                                            <constraint firstAttribute="width" constant="45" id="tZw-Xt-QUX"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="pbf-NF-lFV" appends="YES" id="HV3-pz-bql"/>
@@ -169,7 +169,7 @@
                                                     <constraint firstAttribute="width" constant="50" id="Hyf-Xh-XGX"/>
                                                 </constraints>
                                             </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-yo-DlM" customClass="FancyTextField" customModule="litroomsocial" customModuleProvider="target">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a caption" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3b-yo-DlM" customClass="FancyTextField" customModule="litroomsocial" customModuleProvider="target">
                                                 <rect key="frame" x="60" y="0.0" width="213" height="50"/>
                                                 <color key="textColor" red="0.53327292199999998" green="0.53336817030000006" blue="0.53326696159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
@@ -195,22 +195,22 @@
                                     <constraint firstAttribute="bottom" secondItem="w7g-Dh-Lgb" secondAttribute="bottom" constant="5" id="i52-fm-HKN"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="259" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-Zc-4j1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="321" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-Zc-4j1">
                                 <rect key="frame" x="0.0" y="136" width="375" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="259" id="Bek-so-cj2">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="259"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="321" id="Bek-so-cj2" customClass="PostCell" customModule="litroomsocial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="321"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bek-so-cj2" id="Qzj-Zd-l5o">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="258.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="320.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9D-vr-smc" customClass="FancyView" customModule="litroomsocial" customModuleProvider="target">
-                                                    <rect key="frame" x="16" y="8" width="343" height="242.5"/>
+                                                    <rect key="frame" x="16" y="8" width="343" height="304.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PKK-50-NcC">
-                                                            <rect key="frame" x="5" y="5" width="333" height="232.5"/>
+                                                            <rect key="frame" x="5" y="5" width="333" height="294.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8kc-Cy-ePj">
                                                                     <rect key="frame" x="0.0" y="0.0" width="333" height="60"/>
@@ -228,7 +228,7 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filled-heart" translatesAutoresizingMaskIntoConstraints="NO" id="UfI-DC-xan">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="UfI-DC-xan">
                                                                             <rect key="frame" x="273" y="0.0" width="60" height="60"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="7oL-Eo-iN4"/>
@@ -241,7 +241,7 @@
                                                                     <rect key="frame" x="0.0" y="70" width="333" height="50"/>
                                                                 </imageView>
                                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-hu-yoK">
-                                                                    <rect key="frame" x="0.0" y="130" width="333" height="88"/>
+                                                                    <rect key="frame" x="0.0" y="130" width="333" height="134"/>
                                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ADR-2p-ZGo"/>
@@ -251,16 +251,16 @@
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="p9i-dM-WOz">
-                                                                    <rect key="frame" x="0.0" y="228" width="333" height="4.5"/>
+                                                                    <rect key="frame" x="0.0" y="274" width="333" height="20.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTW-Bf-Tyq">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="39.5" height="4.5"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="297.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROT-h5-8tG">
-                                                                            <rect key="frame" x="54.5" y="0.0" width="278.5" height="4.5"/>
+                                                                            <rect key="frame" x="312.5" y="0.0" width="20.5" height="20.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -289,6 +289,13 @@
                                                 <constraint firstAttribute="trailing" secondItem="E9D-vr-smc" secondAttribute="trailing" constant="16" id="x0z-gE-F1I"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="likesLabel" destination="ROT-h5-8tG" id="f89-Ce-Rys"/>
+                                            <outlet property="postImage" destination="9VY-69-V1p" id="VnI-bJ-9YD"/>
+                                            <outlet property="postText" destination="bcl-hu-yoK" id="RCf-0k-xSj"/>
+                                            <outlet property="profileImage" destination="qmR-LQ-SPy" id="iHR-0w-zdf"/>
+                                            <outlet property="usernameLabel" destination="U6S-fd-FWN" id="cXx-2o-bJF"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -327,8 +334,8 @@
         <image name="Welcome-Litroom" width="607" height="112"/>
         <image name="add-image" width="88" height="88"/>
         <image name="add-post" width="88" height="88"/>
+        <image name="empty-heart" width="70" height="70"/>
         <image name="f" width="352" height="328"/>
-        <image name="filled-heart" width="70" height="70"/>
         <image name="sign-out" width="92" height="65"/>
     </resources>
 </document>
