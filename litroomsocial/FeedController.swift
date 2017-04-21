@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
+import Firebase
 
 class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
@@ -30,4 +32,14 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return cell!
         
     }
+    @IBAction func signOutTapped(_ sender: AnyObject) {
+        
+        let keychainResult = KeychainWrapper.standard.removeObject(forKey: USER_IS_LOGGED_IN)
+        
+        print("Litroom: ID removed from keychain \(keychainResult)")
+        try! FIRAuth.auth()?.signOut()
+        
+        performSegue(withIdentifier: "GoToSignIn", sender: nil)
+    }
+
 }
