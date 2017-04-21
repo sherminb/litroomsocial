@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "litroomsocial/SignInController.swift"
-            timestampString = "514499773.129302"
+            timestampString = "514503300.907938"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "signInDone(user:)"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "signInDone(user:userData:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

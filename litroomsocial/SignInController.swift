@@ -40,14 +40,18 @@ class SignInController: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: password){(user,error) in
                 if error == nil{
                     print("Litroom: firebase email login success")
-                    self.signInDone(user: user)
+                    
+                   
+                    self.signInDone(user: user,userData:  nil)
+                    
                 }else{
                     FIRAuth.auth()?.createUser(withEmail: email, password: password){(user,error) in
                         if error != nil{
                             print("Litroom: error in creating user, err=\(error.debugDescription)")
                         }else{
                             print ("Litroom: creating new user success")
-                            self.signInDone(user: user)
+                        
+                            self.signInDone(user: user,userData:  nil)
                         }
                     }
                     
@@ -55,11 +59,17 @@ class SignInController: UIViewController {
             }
         }
     }
-    func signInDone(user: FIRUser?){
+    func signInDone(user: FIRUser?, userData: Dictionary<String,String>?){
         if let user = user{
             let saveSuccessful: Bool = KeychainWrapper.standard.set(user.uid, forKey: USER_IS_LOGGED_IN)
             if saveSuccessful{
                 print("Litroom: keychain update success")
+            }
+            if userData == nil{
+                DataService.ds.saveOrUpdateUser(uid: user.uid, userData: ["provider": user.providerID])
+            }
+            else{
+                DataService.ds.saveOrUpdateUser(uid: user.uid, userData: userData!)
             }
             performSegue(withIdentifier: "GoToFeed", sender: nil)
         }
@@ -86,7 +96,9 @@ class SignInController: UIViewController {
                 
             }else{
                 print("Litroom: firbase login success")
-                self.signInDone(user: user)
+                
+                let userData = ["provider": credentials.provider]
+                self.signInDone(user: user,userData: userData)
             }
         }
     }

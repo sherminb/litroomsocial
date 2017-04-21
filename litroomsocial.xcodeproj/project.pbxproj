@@ -22,6 +22,7 @@
 		2A9C94241EA8061600D38E14 /* RoundedFancyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */; };
 		2A9C94271EA8403400D38E14 /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94261EA8403400D38E14 /* FeedController.swift */; };
 		2A9C94291EAA774400D38E14 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C94281EAA774400D38E14 /* CircleImage.swift */; };
+		2A9C942C1EAAAED500D38E14 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9C942B1EAAAED500D38E14 /* DataService.swift */; };
 		95768E4C1E0757D4960091D5 /* Pods_litroomsocialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */; };
 		F6ADD1F60D4FEF73B867FD89 /* Pods_litroomsocial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B96C0477620F653C1762F9E5 /* Pods_litroomsocial.framework */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		2A9C94231EA8061600D38E14 /* RoundedFancyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedFancyButton.swift; sourceTree = "<group>"; };
 		2A9C94261EA8403400D38E14 /* FeedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
 		2A9C94281EAA774400D38E14 /* CircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		2A9C942B1EAAAED500D38E14 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3C9CB6E3DE1EF69371923CBD /* Pods-litroomsocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocial/Pods-litroomsocial.debug.xcconfig"; sourceTree = "<group>"; };
 		79F6943CA7E6B749BCD78B4C /* Pods_litroomsocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_litroomsocialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE94547A02BC915BF30501DA /* Pods-litroomsocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-litroomsocialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-litroomsocialTests/Pods-litroomsocialTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		2A9C93F31EA7F8D200D38E14 /* litroomsocial */ = {
 			isa = PBXGroup;
 			children = (
+				2A9C942A1EAAAEC000D38E14 /* Service */,
 				2A9C94251EA80F3700D38E14 /* Controller */,
 				2A9C941A1EA8038200D38E14 /* Utility */,
 				2A9C94191EA8037700D38E14 /* View */,
@@ -168,6 +171,14 @@
 				2A9C94261EA8403400D38E14 /* FeedController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		2A9C942A1EAAAEC000D38E14 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2A9C942B1EAAAED500D38E14 /* DataService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 		AF795B0C3A7AE63AA5E26119 /* Frameworks */ = {
@@ -388,6 +399,7 @@
 				2A9C93F71EA7F8D200D38E14 /* SignInController.swift in Sources */,
 				2A9C93FD1EA7F8D200D38E14 /* litroomsocial.xcdatamodeld in Sources */,
 				2A9C94221EA804FE00D38E14 /* FancyButton.swift in Sources */,
+				2A9C942C1EAAAED500D38E14 /* DataService.swift in Sources */,
 				2A9C94201EA804E000D38E14 /* FancyTextField.swift in Sources */,
 				2A9C941C1EA8039D00D38E14 /* FancyView.swift in Sources */,
 				2A9C94271EA8403400D38E14 /* FeedController.swift in Sources */,
