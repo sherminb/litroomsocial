@@ -17,6 +17,17 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        DataService.ds.postsRef.observe(.value, with: { (snapshot) in
+            if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
+                for snap in snapshot {
+                    print("SNAP: \(snap)")
+                   
+                }
+            }
+            
+        })
+
+        
         tableView.dataSource = self
         tableView.delegate = self
     }
