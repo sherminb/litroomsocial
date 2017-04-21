@@ -35,5 +35,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "litroomsocial/FeedController.swift"
+            timestampString = "514504711.997542"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "litroomsocial.FeedController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "litroomsocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sherea/Desktop/swift%20learning/litroomsocial/litroomsocial/FeedController.swift"
+                  timestampString = "514504731.868908"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "litroomsocial.FeedController.(viewDidLoad () -&gt; ()).(closure #1)"
+                  moduleName = "litroomsocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sherea/Desktop/swift%20learning/litroomsocial/litroomsocial/FeedController.swift"
+                  timestampString = "514504731.871609"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1366">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

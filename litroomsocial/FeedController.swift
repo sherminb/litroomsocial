@@ -13,6 +13,7 @@ import Firebase
 class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
      @IBOutlet weak var tableView: UITableView!
+     var posts = [Post]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,10 +22,14 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
             if let snapshot = snapshot.children.allObjects as? [FIRDataSnapshot] {
                 for snap in snapshot {
                     print("SNAP: \(snap)")
-                   
+                    if let postDict = snap.value as? Dictionary<String, AnyObject>{
+                        let post = Post(postKey: snap.key, dict: postDict)
+                        self.posts.append(post)
+                        
+                    }
                 }
             }
-            
+            self.tableView.reloadData()
         })
 
         
@@ -36,11 +41,15 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return posts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell")
-        return cell!
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell{
+            let post = posts[indexPath.row]
+            cell.loadCell(post: post)
+            return cell
+        }
+        return PostCell()
         
     }
     @IBAction func signOutTapped(_ sender: AnyObject) {
