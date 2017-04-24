@@ -17,6 +17,8 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
      @IBOutlet weak var tableView: UITableView!
      var posts = [Post]()
     
+    static var imageCache: NSCache<NSString, UIImage> = NSCache()//cashing images
+    
     var imagePicker : UIImagePickerController!
     
     override func viewDidLoad() {
@@ -54,7 +56,12 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "PostCell") as? PostCell{
             let post = posts[indexPath.row]
-            cell.loadCell(post: post)
+            if let img = FeedController.imageCache.object(forKey: post.imageUrl as NSString){
+                cell.loadCell(post: post,image: img)
+                print("Litroom: loading image from cache")
+            }else{
+                cell.loadCell(post: post,image: nil)
+            }
             return cell
         }
         return PostCell()
