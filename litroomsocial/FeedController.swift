@@ -111,10 +111,30 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     print("Litroom: saving image to firebase storage success")
                     
                     let downloadUrl = metaData?.downloadURL()?.absoluteString
+                    if let imgUrl = downloadUrl
+                    {
+                        self.saveToFirebase(imgUrl: imgUrl)
+                    }
                     
                 }
             }
         }
+        
+    }
+    func saveToFirebase(imgUrl : String){
+        let newPost : Dictionary<String,AnyObject> = [
+            "caption" : captionTxt.text! as AnyObject,
+            "imageUrl" : imgUrl as AnyObject,
+            "likes" : 0 as AnyObject
+            
+        ]
+        DataService.ds.postsRef.childByAutoId().setValue(newPost)
+        
+        captionTxt.text = ""
+        imagePicked = false
+        addImage.image = UIImage(named: "add-image")
+        
+        tableView.reloadData()
         
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
