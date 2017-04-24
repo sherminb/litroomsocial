@@ -161,7 +161,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w7g-Dh-Lgb">
                                         <rect key="frame" x="5" y="5" width="333" height="50"/>
                                         <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="IMH-h0-5VK" customClass="CircleImage" customModule="litroomsocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="IMH-h0-5VK" customClass="CircleImage" customModule="litroomsocial" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <gestureRecognizers/>
@@ -179,13 +179,17 @@
                                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-post" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Hi-3oP" customClass="CircleImage" customModule="litroomsocial" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-post" translatesAutoresizingMaskIntoConstraints="NO" id="Lyy-Hi-3oP" customClass="CircleImage" customModule="litroomsocial" customModuleProvider="target">
                                                 <rect key="frame" x="283" y="0.0" width="50" height="50"/>
                                                 <color key="backgroundColor" red="0.53327292203903198" green="0.53336817026138306" blue="0.53326696157455444" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="PWa-bn-83c"/>
                                                     <constraint firstAttribute="width" constant="50" id="WHc-8L-BvK"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="SzC-Ip-esz" appends="YES" id="r0y-2z-gN2"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -321,6 +325,7 @@
                     </view>
                     <connections>
                         <outlet property="addImage" destination="IMH-h0-5VK" id="PB5-vR-4j1"/>
+                        <outlet property="captionTxt" destination="A3b-yo-DlM" id="m9l-eu-ZmP"/>
                         <outlet property="tableView" destination="UQK-Zc-4j1" id="Y7r-ME-NML"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="GoToSignIn" id="Ahx-kr-KoL"/>
                     </connections>
@@ -334,6 +339,11 @@
                 <tapGestureRecognizer id="TOV-K1-T3u">
                     <connections>
                         <action selector="addImageTapped:" destination="KPf-4W-A2D" id="JG4-8Y-fOI"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="SzC-Ip-esz">
+                    <connections>
+                        <action selector="postTapped:" destination="KPf-4W-A2D" id="Hgc-Vc-qen"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

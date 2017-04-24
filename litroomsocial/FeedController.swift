@@ -12,14 +12,17 @@ import Firebase
 
 class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource,UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var captionTxt: FancyTextField!
     @IBOutlet weak var addImage: CircleImage!
 
      @IBOutlet weak var tableView: UITableView!
      var posts = [Post]()
     
+    
     static var imageCache: NSCache<NSString, UIImage> = NSCache()//cashing images
     
     var imagePicker : UIImagePickerController!
+    var imagePicked = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +37,7 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
                     print("SNAP: \(snap)")
                     if let postDict = snap.value as? Dictionary<String, AnyObject>{
                         let post = Post(postKey: snap.key, dict: postDict)
+                      
                         self.posts.append(post)
                         
                     }
@@ -81,11 +85,42 @@ class FeedController: UIViewController,UITableViewDelegate,UITableViewDataSource
         present(imagePicker, animated: true, completion: nil)
 
     }
-    
+    @IBAction func postTapped(_ sender: Any) {
+        
+        guard let caption = captionTxt.text, caption != "" else{
+            return
+        }
+        guard let img = addImage.image, imagePicked == true else{
+            return
+        }
+        
+        if let imageData = UIImageJPEGRepresentation(img, 0.2){
+        
+            let imageId = NSUUID().uuidString//get a unique random id
+        
+            let metaData = FIRStorageMetadata()
+        
+            metaData.contentType = "image/jpeg"
+        
+        
+            DataService.ds.postsStorageRef.child(imageId).put(imageData, metadata: metaData){ (metaData,error) in
+                
+                if error != nil{
+                    print("Litroom: error in saving firebase image")
+                }else{
+                    print("Litroom: saving image to firebase storage success")
+                    
+                    let downloadUrl = metaData?.downloadURL()?.absoluteString
+                    
+                }
+            }
+        }
+        
+    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let img = info[UIImagePickerControllerEditedImage] as? UIImage{
             addImage.image = img
-            
+            imagePicked = true
         }
         imagePicker.dismiss(animated: true, completion: nil)
     }

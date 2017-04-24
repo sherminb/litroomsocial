@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "litroomsocial/FeedController.swift"
-            timestampString = "514755958.054913"
+            timestampString = "514758130.548196"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
             <Locations>
@@ -81,6 +81,70 @@
                   offsetFromSymbolStart = "1366">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "litroomsocial/SignInController.swift"
+            timestampString = "514758403.475397"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "firebaseAuth(credentials:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "litroomsocial.SignInController.firebaseAuth (credentials : __ObjC.FIRAuthCredential) -&gt; ()"
+                  moduleName = "litroomsocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sherea/Desktop/swift%20learning/litroomsocial/litroomsocial/SignInController.swift"
+                  timestampString = "514758404.091136"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "litroomsocial.SignInController.(firebaseAuth (credentials : __ObjC.FIRAuthCredential) -&gt; ()).(closure #1)"
+                  moduleName = "litroomsocial"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Sherea/Desktop/swift%20learning/litroomsocial/litroomsocial/SignInController.swift"
+                  timestampString = "514758404.092858"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "27">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "litroomsocial/FeedController.swift"
+            timestampString = "514758409.209936"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "postTapped(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
