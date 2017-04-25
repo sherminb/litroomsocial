@@ -203,7 +203,7 @@
                                     <constraint firstAttribute="bottom" secondItem="w7g-Dh-Lgb" secondAttribute="bottom" constant="5" id="i52-fm-HKN"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="321" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-Zc-4j1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="321" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UQK-Zc-4j1">
                                 <rect key="frame" x="0.0" y="136" width="375" height="531"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -238,6 +238,7 @@
                                                                         </label>
                                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty-heart" translatesAutoresizingMaskIntoConstraints="NO" id="UfI-DC-xan">
                                                                             <rect key="frame" x="273" y="0.0" width="60" height="60"/>
+                                                                            <gestureRecognizers/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="60" id="7oL-Eo-iN4"/>
                                                                                 <constraint firstAttribute="height" constant="60" id="fxb-kN-gzs"/>
@@ -298,6 +299,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="likeImage" destination="UfI-DC-xan" id="BjV-io-b9G"/>
                                             <outlet property="likesLabel" destination="ROT-h5-8tG" id="f89-Ce-Rys"/>
                                             <outlet property="postImage" destination="9VY-69-V1p" id="VnI-bJ-9YD"/>
                                             <outlet property="postText" destination="bcl-hu-yoK" id="RCf-0k-xSj"/>
